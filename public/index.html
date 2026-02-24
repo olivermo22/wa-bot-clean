@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnóstico Baileys</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Diagnóstico WhatsApp Web (Baileys)</h1>
+
+      <section class="card">
+        <h2>Estado de conexión</h2>
+        <p><strong>Estado:</strong> <span id="state">-</span></p>
+        <p><strong>StatusCode:</strong> <span id="statusCode">-</span></p>
+        <p><strong>Reintento:</strong> <span id="reconnect">-</span></p>
+        <img id="qr" alt="QR de WhatsApp" />
+      </section>
+
+      <section class="card">
+        <h2>Controles</h2>
+        <button id="btnNettest">Ejecutar /api/nettest</button>
+        <button id="btnRegenerate" class="danger">Regenerar sesión</button>
+        <pre id="nettest"></pre>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
